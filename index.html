@@ -235,7 +235,7 @@ paint();
 /* ===== Відправка ===== */
 function human(q){
   const s = A[q.id]; if(!s) return "";
-  const parts = s.v.map(v => v==="__skip" ? "Не знаю / уточню" : v==="__other" ? "Інше: "+(s.x||"").trim() : v);
+  const parts = s.v.map(v => v==="__skip" ? "Не знаю / уточню" : v==="__other" ? ((s.x||"").trim() ? "Інше: "+(s.x||"").trim() : "Інше (не уточнено)") : v);
   if(q.type==="text") return (s.x||"").trim();
   return parts.join("; ");
 }
