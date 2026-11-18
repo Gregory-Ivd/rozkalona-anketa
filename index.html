@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Розкальона сталь — анкета</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Oswald:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --ink:#16171a; --paper:#f3f1ec; --card:#ffffff; --line:#e1ddd4;
+  --red:#d8261c; --red-d:#b51d15; --spark:#ff9f1c; --mute:#6b6a66;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Montserrat,system-ui,Arial,sans-serif;font-size:16px;line-height:1.45}
+header{background:var(--ink);color:#fff;padding:28px 16px 34px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,159,28,.55),rgba(255,159,28,0) 65%)}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header .wrap{padding:0;position:relative;z-index:1}
+.brand{font-family:Oswald,sans-serif;font-weight:700;font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--spark)}
+h1{font-family:Oswald,sans-serif;font-weight:700;font-size:clamp(32px,7vw,48px);line-height:1.05;margin:10px 0 12px;text-transform:uppercase}
+h1 span{color:var(--red)}
+header p{margin:0;color:#d7d5d0;max-width:560px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.badges b{font-size:13px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 12px;border-radius:999px;font-weight:600}
+.bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px}
+.track{flex:1;height:8px;background:var(--line);border-radius:8px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--spark));transition:width .25s}
+.cnt{font-size:13px;font-weight:700;color:var(--mute);white-space:nowrap}
+main{padding:8px 0 120px}
+.sec{margin-top:30px}
+.sec h2{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:24px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+.sec h2::before{content:"";width:6px;height:24px;background:var(--red);border-radius:2px}
+.sec .why{color:var(--mute);font-size:14px;margin:0 0 14px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+.q.done{border-color:#c9d9c4}
+.q .t{font-weight:700;margin:0 0 4px}
+.q .h{font-size:13px;color:var(--mute);margin:0 0 10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.opt{font:inherit;font-weight:600;font-size:15px;padding:11px 15px;background:#faf9f6;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;color:var(--ink);text-align:left;min-height:44px}
+.opt:hover{border-color:#bdb8ab}
+.opt.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.opt.on::before{content:"✓ ";color:var(--spark)}
+.opt.skip{color:var(--mute);font-weight:500;background:transparent;border-style:dashed}
+.opt.skip.on{background:var(--mute);border-color:var(--mute);color:#fff}
+.more{margin-top:10px;display:none}
+.more.show{display:block}
+.more input,.more textarea,.free textarea{width:100%;font:inherit;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff}
+.more input:focus,.free textarea:focus{outline:2px solid var(--spark);border-color:var(--spark)}
+.free textarea{min-height:90px;margin-top:8px}
+.drive{background:var(--ink);color:#fff;border-radius:14px;padding:18px;margin-top:12px}
+.drive b{color:var(--spark)}
+.btn{display:inline-block;font:inherit;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--red);color:#fff;border:0;border-radius:12px;padding:15px 26px;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--red-d)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.btn.alt{background:var(--spark);color:var(--ink);margin-top:10px}
+.foot{position:fixed;left:0;right:0;bottom:0;background:rgba(243,241,236,.96);border-top:1px solid var(--line);padding:12px 16px;z-index:6}
+.foot .wrap{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:0}
+.foot small{color:var(--mute);font-size:13px}
+.err{color:var(--red-d);font-weight:700;font-size:14px;margin-top:8px;display:none}
+#thanks{display:none;text-align:center;padding:60px 16px}
+#thanks h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:38px;margin:0 0 10px}
+#thanks h2 span{color:var(--red)}
+@media (max-width:520px){.opt{flex:1 1 calc(50% - 8px)}.foot small{display:none}.foot .btn{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Розкальона сталь</div>
+    <h1>Привіт, Паша.<br><span>Тиснемо</span> й готово</h1>
+    <p>Це анкета, щоб зробити для компанії сайт, Google-профіль, соцмережі й YouTube. Писати майже нічого не треба — лише обирати. Що не знаєте, пропускайте: уточнимо потім.</p>
+    <div class="badges"><b>≈ 7 хвилин</b><b>Зберігається саме</b><b>Можна з телефона</b></div>
+  </div>
+</header>
+
+<div class="bar"><div class="wrap"><div class="track"><div class="fill" id="fill"></div></div><div class="cnt" id="cnt">0 з 0</div></div></div>
+
+<main class="wrap" id="app"></main>
+
+<div id="thanks" class="wrap">
+  <h2>Дякуємо, <span>Паша</span>!</h2>
+  <p>Відповіді отримали. Далі ми самі підготуємо структуру сайту й чернетки та покажемо вам на погодження.</p>
+  <div class="drive" id="driveDone" style="text-align:left"></div>
+</div>
+
+<div class="foot" id="foot"><div class="wrap">
+  <small id="hint">Усі поля необов'язкові. Надсилати можна у будь-який момент.</small>
+  <button class="btn" id="send">Надіслати</button>
+</div></div>
+
+<script>
+/* ===== Налаштування ===== */
+const ENDPOINT = "";   // сюди вставляється адреса Google Apps Script після розгортання
+const DRIVE_URL = "https://drive.google.com/drive/folders/1oscOwUnQDg5J5ruJ1ydregrrtTEjVjWf";
+const STORE = "rozkalona_anketa_v1";
+
+const AREAS = ["Волинська","Рівненська","Житомирська","Львівська","Тернопільська","Хмельницька","Івано-Франківська","Закарпатська","Чернівецька"];
+const SERVICES = ["Ангари","Склади, зерносховища","Навіси, накриття","Ворота","Паркани","Гаражі, бокси","Балкони, перила","Сходи","Каркаси будівель","Індивідуальні металоконструкції","Ремонт, реконструкція"];
+
+/* type: one — один варіант, many — декілька. other:true — додає «Інше» з полем тексту. */
+const S = [
+{ t:"Про компанію", why:"Щоб на сайті були правильні факти.", q:[
+  {id:"brand", q:"Як пишемо назву компанії?", type:"one", o:["Розкальона сталь"], other:"Інакше — напишіть"},
+  {id:"city", q:"Де ваш цех або офіс?", type:"one", o:["Рівне","Луцьк","Цеху немає, працюємо бригадами"], other:"Інше місто"},
+  {id:"since", q:"Коли почали працювати?", type:"one", o:["До 2015","2015–2019","2020–2022","Після 2022"]},
+  {id:"objects", q:"Скільки об'єктів уже зробили?", type:"one", o:["До 50","50–150","150–500","Понад 500"]},
+  {id:"team", q:"Хто в команді з 25 людей?", type:"many", o:["Зварювальники","Монтажники","Інженер-проєктувальник","Менеджери з продажу","Водії, логістика","Офіс, бухгалтерія"]},
+  {id:"design", q:"Проєктування", type:"one", o:["Проєктуємо самі","З партнером","За кресленнями замовника"]}
+]},
+{ t:"Що ви робите", why:"Від цього залежать сторінки сайту й реклама.", q:[
+  {id:"services", q:"Які роботи виконуєте?", type:"many", o:SERVICES, other:"Ще щось"},
+  {id:"main", q:"Що хочете продавати найбільше?", h:"Оберіть головне — 1-2 напрями.", type:"many", o:SERVICES},
+  {id:"prod", q:"Виробництво", type:"one", o:["Усе у власному цеху","Частину купуємо готовим","Робимо на об'єкті"]},
+  {id:"mat", q:"Матеріали, з якими працюєте", type:"many", o:["Профнастил","Сендвіч-панелі","Профільна труба","Швелер, двотавр","Нержавійка","Ковані елементи","Дерево, композит"]},
+  {id:"warranty", q:"Гарантія на роботи", type:"one", o:["1 рік","2–3 роки","5 років","10+ років","За договором"]},
+  {id:"term", q:"Скільки триває ангар 20×40 м під ключ?", type:"one", o:["2–3 тижні","1–2 місяці","2–4 місяці","По-різному"], skip:"Не знаю, уточню"}
+]},
+{ t:"Ціни й оплата", why:"Ціни на сайті — рішення за вами. Тут лише формат.", q:[
+  {id:"prices", q:"Як показувати ціни на сайті?", type:"one", o:["Орієнтири «від …» за м²","Лише розрахунок за запитом","Не вирішили"]},
+  {id:"pay", q:"Як оплачують клієнти?", type:"many", o:["Аванс","Поетапна оплата","Безготівка з ПДВ","Безготівка без ПДВ","Готівка","Розстрочка, лізинг"]},
+  {id:"visit", q:"Виїзд на замір", type:"one", o:["Безкоштовно по області","Безкоштовно поруч, далі платно","Завжди платно"]}
+]},
+{ t:"Географія", why:"Ціль — вся Західна Україна. Тут реальний стан.", q:[
+  {id:"worked", q:"Де вже виконували роботи?", type:"many", o:AREAS, other:"Інші області"},
+  {id:"ready", q:"Куди готові їхати?", type:"many", o:AREAS, other:"Інші області"},
+  {id:"crew", q:"Виїзд бригади в іншу область", type:"one", o:["Так, із проживанням","Лише великі об'єкти","Поки не їздимо далеко"]}
+]},
+{ t:"Клієнти й довіра", why:"Довіра продає великі об'єкти.", q:[
+  {id:"clients", q:"Хто ваші основні клієнти?", type:"many", o:["Агро, фермери","Склади, логістика","СТО, майстерні","Виробництва","Забудовники","Приватні власники","Громади, держава"]},
+  {id:"reviews", q:"Відгуки", type:"many", o:["Є в Google або Facebook","Є листи чи відео-подяки","Клієнти готові підтвердити по телефону","Поки немає"]},
+  {id:"docs", q:"Що з цього маєте?", type:"many", o:["ФОП","ТОВ","Сертифікати зварювальників","Ліцензії, допуски","Досвід державних закупівель","Членство в асоціаціях"]}
+]},
+{ t:"Матеріали для сайту", why:"Реальні фото і відео — найважливіше. Банери з ШІ на сайт не візьмемо.", q:[
+  {id:"photos", q:"Фото і відео з об'єктів", type:"one", o:["Є багато","Є трохи","Лише в телефонах працівників","Немає"]},
+  {id:"shoot", q:"Знімати відео в цеху й на об'єктах", type:"one", o:["Так, можемо самі","Так, потрібна допомога","Поки ні"]},
+  {id:"logo", q:"Логотип", type:"one", o:["Є вихідний файл","Є лише на банері","Немає — зробіть новий"]},
+  {id:"banners", q:"Фото на ваших банерах", type:"one", o:["Згенеровані ШІ","Частково реальні","Усі реальні"]},
+  {id:"faces", q:"Хто готовий з'явитись у кадрі?", type:"many", o:["Власник, директор","Бригадири","Зварювальники","Ніхто, лише об'єкти"]}
+], drive:true},
+{ t:"Контакти і мета", why:"Щоб кожна заявка не пропадала.", q:[
+  {id:"answers", q:"Хто відповідає на дзвінки й заявки?", type:"one", o:["Павло","Менеджер","Усі по черзі"]},
+  {id:"speed", q:"Як швидко відповідаєте?", type:"one", o:["Протягом години","Того ж дня","Не завжди"]},
+  {id:"msg", q:"Де ще вам пишуть клієнти?", type:"many", o:["Viber","Telegram","WhatsApp","Instagram","Facebook"]},
+  {id:"leads", q:"Скільки заявок на місяць хочете?", type:"one", o:["5–10","10–30","30–60","Понад 60"]},
+  {id:"cap", q:"Скільки об'єктів на місяць можете взяти?", type:"one", o:["1–3","4–8","9–15","Понад 15"]},
+  {id:"budget", q:"Бюджет на рекламу в місяць", type:"one", o:["До 10 000 грн","10–30 000 грн","30–70 000 грн","Понад 70 000 грн"], skip:"Ще не знаю"},
+  {id:"edge", q:"Чим ви кращі за інших?", h:"Оберіть до трьох.", type:"many", o:["Швидко","Без прихованих доплат","Власне виробництво","Гарантія","Під ключ","Індивідуальні проєкти","Ціна"]},
+  {id:"have", q:"Що вже є?", type:"many", o:["Домен","Пошта на домені","Google-акаунт компанії","Facebook","Instagram","Нічого"]},
+  {id:"rivals", q:"Конкуренти, які вам відомі", type:"text", ph:"Назви чи посилання. Необов'язково."}
+]}
+];
+
+/* ===== Стан ===== */
+let A = {};
+try { A = JSON.parse(localStorage.getItem(STORE) || "{}"); } catch(e){}
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify(A)); } catch(e){} };
+const all = S.flatMap(s => s.q);
+const val = id => (A[id] ||= {v:[], x:""});
+
+/* ===== Малювання ===== */
+const app = document.getElementById("app");
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+
+S.forEach(sec => {
+  const box = el("section","sec");
+  box.append(el("h2",null,sec.t), el("p","why",sec.why));
+  sec.q.forEach(q => box.append(card(q)));
+  if(sec.drive){
+    const d = el("div","drive");
+    d.innerHTML = "<b>Фото й відео</b> завантажте сюди, як буде хвилина. Оригінали, не з WhatsApp — він стискає.<br>";
+    const a = el("a","btn alt","Відкрити папку для фото"); a.href=DRIVE_URL; a.target="_blank"; a.rel="noopener";
+    d.append(a); box.append(d);
+  }
+  app.append(box);
+});
+const lastFree = el("section","sec");
+lastFree.innerHTML = '<h2>Щось іще?</h2><p class="why">Необов\'язково.</p><div class="free"><textarea id="note" placeholder="Що важливо знати про компанію або проєкт"></textarea></div>';
+app.append(lastFree);
+const note = document.getElementById("note");
+note.value = (A.note && A.note.x) || "";
+note.addEventListener("input", () => { A.note = {v:[], x:note.value}; save(); });
+
+function card(q){
+  const c = el("div","q"); c.id = "q-"+q.id;
+  c.append(el("p","t",q.q));
+  if(q.h) c.append(el("p","h",q.h));
+  const st = val(q.id);
+  if(q.type==="text"){
+    const ta = document.createElement("textarea");
+    ta.placeholder = q.ph||""; ta.style.cssText="width:100%;font:inherit;padding:11px 12px;border:1.5px solid #e1ddd4;border-radius:10px;min-height:70px";
+    ta.value = st.x||""; ta.addEventListener("input",()=>{st.x=ta.value;save();paint();});
+    c.append(ta); return c;
+  }
+  const row = el("div","opts"); c.append(row);
+  const more = el("div","more"); const inp = document.createElement("input"); inp.placeholder = q.other||""; more.append(inp);
+  const OTHER="__other", SKIP="__skip";
+  const opts = q.o.map(v=>({k:v,label:v}));
+  if(q.other) opts.push({k:OTHER,label:"Інше"});
+  opts.push({k:SKIP,label:q.skip||"Не знаю"});
+  const btns = [];
+  opts.forEach(o=>{
+    const b = el("button","opt"+(o.k===SKIP?" skip":""),o.label); b.type="button";
+    b.addEventListener("click",()=>{
+      let v = st.v;
+      if(o.k===SKIP){ v = v.includes(SKIP)?[]:[SKIP]; }
+      else{
+        v = v.filter(x=>x!==SKIP);
+        if(q.type==="one"){ v = v.includes(o.k)?[]:[o.k]; }
+        else { v = v.includes(o.k)? v.filter(x=>x!==o.k) : [...v,o.k]; }
+      }
+      st.v = v; if(!v.includes(OTHER)) st.x = ""; inp.value = st.x; sync(); save(); paint();
+    });
+    btns.push([o.k,b]); row.append(b);
+  });
+  inp.value = st.x||"";
+  inp.addEventListener("input",()=>{st.x=inp.value;save();});
+  function sync(){ btns.forEach(([k,b])=>b.classList.toggle("on",st.v.includes(k))); more.classList.toggle("show",st.v.includes(OTHER)); }
+  c.append(more); sync(); return c;
+}
+
+function answered(q){ const s=A[q.id]; return !!s && (s.v.length>0 || (s.x||"").trim().length>0); }
+function paint(){
+  const n = all.filter(answered).length;
+  document.getElementById("cnt").textContent = n+" з "+all.length;
+  document.getElementById("fill").style.width = Math.round(n/all.length*100)+"%";
+  all.forEach(q=>document.getElementById("q-"+q.id).classList.toggle("done",answered(q)));
+}
+paint();
+
+/* ===== Відправка ===== */
+function human(q){
+  const s = A[q.id]; if(!s) return "";
+  const parts = s.v.map(v => v==="__skip" ? "Не знаю / уточню" : v==="__other" ? "Інше: "+(s.x||"").trim() : v);
+  if(q.type==="text") return (s.x||"").trim();
+  return parts.join("; ");
+}
+const sendBtn = document.getElementById("send");
+sendBtn.addEventListener("click", async () => {
+  const rows = [];
+  S.forEach(sec => sec.q.forEach(q => { if(answered(q)) rows.push({section:sec.t,question:q.q,answer:human(q)}); }));
+  const nt = (A.note && A.note.x || "").trim(); if(nt) rows.push({section:"Додатково",question:"Щось іще",answer:nt});
+  if(!rows.length){ alert("Поки немає жодної відповіді."); return; }
+  if(!ENDPOINT){ alert("Форма ще не підключена до таблиці. Напишіть Григорію."); return; }
+  sendBtn.disabled = true; sendBtn.textContent = "Надсилаю…";
+  try{
+    await fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body:JSON.stringify({who:"Паша",rows})});
+    done();
+  }catch(e){
+    sendBtn.disabled=false; sendBtn.textContent="Надіслати ще раз";
+    alert("Не вдалося надіслати. Відповіді збережені в браузері, спробуйте ще раз.");
+  }
+});
+function done(){
+  document.getElementById("app").style.display="none";
+  document.querySelector(".bar").style.display="none";
+  document.getElementById("foot").style.display="none";
+  const t=document.getElementById("thanks"); t.style.display="block";
+  const d=document.getElementById("driveDone");
+  d.innerHTML='<b>Одне прохання.</b> Якщо маєте фото чи відео об\'єктів, скиньте в цю папку. Це найкорисніше, що можна зробити далі.<br>';
+  const a=el("a","btn alt","Папка для фото й відео"); a.href=DRIVE_URL; a.target="_blank"; a.rel="noopener"; d.append(a);
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
